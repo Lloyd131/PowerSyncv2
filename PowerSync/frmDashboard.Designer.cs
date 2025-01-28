@@ -46,52 +46,54 @@
             // 
             panel7.BackColor = Color.FromArgb(37, 42, 64);
             panel7.Controls.Add(label8);
-            panel7.Location = new Point(27, 243);
+            panel7.Location = new Point(27, 285);
             panel7.Name = "panel7";
-            panel7.Size = new Size(989, 284);
+            panel7.Size = new Size(1412, 436);
             panel7.TabIndex = 7;
             panel7.Paint += panel7_Paint;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("SansSerif", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 2);
+            label8.Font = new Font("SansSerif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 2);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(424, 125);
+            label8.Location = new Point(611, 180);
             label8.Name = "label8";
-            label8.Size = new Size(125, 17);
+            label8.Size = new Size(195, 27);
             label8.TabIndex = 0;
             label8.Text = "Graph goes here";
+            label8.Click += label8_Click;
             // 
             // panel6
             // 
             panel6.BackColor = Color.FromArgb(37, 42, 64);
             panel6.Controls.Add(label9);
             panel6.Controls.Add(label10);
-            panel6.Location = new Point(546, 24);
+            panel6.Location = new Point(799, 24);
             panel6.Name = "panel6";
-            panel6.Size = new Size(470, 184);
+            panel6.Size = new Size(637, 224);
             panel6.TabIndex = 6;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Nirmala UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Font = new Font("Nirmala UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.FromArgb(128, 255, 255);
-            label9.Location = new Point(105, 59);
+            label9.Location = new Point(107, 53);
             label9.Name = "label9";
-            label9.Size = new Size(255, 54);
+            label9.Size = new Size(509, 106);
             label9.TabIndex = 1;
             label9.Text = "2 PM - 4 PM";
+            label9.Click += label9_Click;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("SansSerif", 12F, FontStyle.Bold, GraphicsUnit.Point, 2);
+            label10.Font = new Font("SansSerif", 16.1999989F, FontStyle.Bold, GraphicsUnit.Point, 2);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(3, 8);
+            label10.Location = new Point(3, 0);
             label10.Name = "label10";
-            label10.Size = new Size(126, 23);
+            label10.Size = new Size(171, 31);
             label10.TabIndex = 0;
             label10.Text = "Peak Hours:\r\n";
             // 
@@ -103,39 +105,39 @@
             panel5.Controls.Add(label5);
             panel5.Location = new Point(27, 24);
             panel5.Name = "panel5";
-            panel5.Size = new Size(470, 184);
+            panel5.Size = new Size(637, 224);
             panel5.TabIndex = 5;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("SansSerif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 2);
+            label7.Font = new Font("SansSerif", 12F, FontStyle.Bold, GraphicsUnit.Point, 2);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(12, 149);
+            label7.Location = new Point(22, 180);
             label7.Name = "label7";
-            label7.Size = new Size(184, 20);
+            label7.Size = new Size(226, 23);
             label7.TabIndex = 2;
             label7.Text = "Last Week: 1, 890 kWh\r\n";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Nirmala UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Nirmala UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(128, 255, 255);
-            label6.Location = new Point(120, 59);
+            label6.Location = new Point(124, 53);
             label6.Name = "label6";
-            label6.Size = new Size(223, 54);
+            label6.Size = new Size(446, 106);
             label6.TabIndex = 1;
             label6.Text = "1,650 kWh";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("SansSerif", 12F, FontStyle.Bold, GraphicsUnit.Point, 2);
+            label5.Font = new Font("SansSerif", 16.1999989F, FontStyle.Bold, GraphicsUnit.Point, 2);
             label5.ForeColor = Color.White;
             label5.Location = new Point(3, 8);
             label5.Name = "label5";
-            label5.Size = new Size(266, 23);
+            label5.Size = new Size(356, 31);
             label5.TabIndex = 0;
             label5.Text = "This Week's Consumption:";
             // 
@@ -144,7 +146,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 73);
-            ClientSize = new Size(1184, 550);
+            ClientSize = new Size(1465, 838);
             Controls.Add(panel7);
             Controls.Add(panel6);
             Controls.Add(panel5);

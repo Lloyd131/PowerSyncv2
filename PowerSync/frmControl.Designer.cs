@@ -29,110 +29,138 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            button2 = new Button();
-            ttbdo = new Button();
+            add = new Button();
+            panel3 = new Panel();
+            label1 = new Label();
             panel2 = new Panel();
-            label2 = new Label();
-            bldglayoutFormLoader = new Panel();
+            bldgA = new Button();
+            ttbdo = new Button();
+            ctrlpnlFormLoader = new Panel();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(37, 42, 64);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(ttbdo);
+            panel1.BackColor = Color.FromArgb(23, 30, 54);
+            panel1.Controls.Add(add);
+            panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(134, 550);
-            panel1.TabIndex = 1;
+            panel1.Size = new Size(181, 838);
+            panel1.TabIndex = 0;
             // 
-            // button2
+            // add
             // 
-            button2.Dock = DockStyle.Top;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("SansSerif", 12F, FontStyle.Bold, GraphicsUnit.Point, 2);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(0, 113);
-            button2.Name = "button2";
-            button2.Size = new Size(134, 29);
-            button2.TabIndex = 1;
-            button2.Text = "+";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            add.FlatAppearance.BorderSize = 0;
+            add.FlatStyle = FlatStyle.Flat;
+            add.Font = new Font("Nirmala UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            add.ForeColor = Color.White;
+            add.Location = new Point(-3, 467);
+            add.Name = "add";
+            add.Size = new Size(181, 60);
+            add.TabIndex = 1;
+            add.Text = "+";
+            add.UseVisualStyleBackColor = true;
+            add.Click += add_Click;
+            add.Leave += add_Leave;
             // 
-            // ttbdo
+            // panel3
             // 
-            ttbdo.BackColor = Color.FromArgb(37, 42, 64);
-            ttbdo.Dock = DockStyle.Top;
-            ttbdo.FlatAppearance.BorderSize = 0;
-            ttbdo.FlatStyle = FlatStyle.Flat;
-            ttbdo.Font = new Font("SansSerif", 12F, FontStyle.Bold, GraphicsUnit.Point, 2);
-            ttbdo.ForeColor = Color.White;
-            ttbdo.Location = new Point(0, 84);
-            ttbdo.Name = "ttbdo";
-            ttbdo.Size = new Size(134, 29);
-            ttbdo.TabIndex = 0;
-            ttbdo.TabStop = false;
-            ttbdo.Text = "TTBDO\r\n";
-            ttbdo.UseVisualStyleBackColor = false;
-            ttbdo.Click += button1_Click;
-            ttbdo.Leave += ttbdo_Leave;
+            panel3.Controls.Add(label1);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(181, 76);
+            panel3.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("SansSerif", 16.1999989F, FontStyle.Bold, GraphicsUnit.Point, 2);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(5, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(170, 31);
+            label1.TabIndex = 0;
+            label1.Text = "BUILDINGS:";
             // 
             // panel2
             // 
-            panel2.Controls.Add(label2);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
+            panel2.Controls.Add(bldgA);
+            panel2.Controls.Add(ttbdo);
+            panel2.Location = new Point(0, 82);
             panel2.Name = "panel2";
-            panel2.Size = new Size(134, 84);
-            panel2.TabIndex = 0;
+            panel2.Size = new Size(178, 379);
+            panel2.TabIndex = 1;
             // 
-            // label2
+            // bldgA
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(9, 12);
-            label2.Name = "label2";
-            label2.Size = new Size(122, 31);
-            label2.TabIndex = 1;
-            label2.Text = "Buildings:\r\n";
+            bldgA.FlatAppearance.BorderSize = 0;
+            bldgA.FlatStyle = FlatStyle.Flat;
+            bldgA.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bldgA.ForeColor = Color.White;
+            bldgA.Location = new Point(9, 84);
+            bldgA.Name = "bldgA";
+            bldgA.Size = new Size(166, 60);
+            bldgA.TabIndex = 1;
+            bldgA.Text = "2 Floors";
+            bldgA.UseVisualStyleBackColor = true;
+            bldgA.Click += bldgA_Click;
             // 
-            // bldglayoutFormLoader
+            // ttbdo
             // 
-            bldglayoutFormLoader.Location = new Point(160, 0);
-            bldglayoutFormLoader.Name = "bldglayoutFormLoader";
-            bldglayoutFormLoader.Size = new Size(994, 538);
-            bldglayoutFormLoader.TabIndex = 3;
+            ttbdo.FlatAppearance.BorderSize = 0;
+            ttbdo.FlatStyle = FlatStyle.Flat;
+            ttbdo.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ttbdo.ForeColor = Color.White;
+            ttbdo.Location = new Point(9, 0);
+            ttbdo.Name = "ttbdo";
+            ttbdo.Size = new Size(166, 60);
+            ttbdo.TabIndex = 0;
+            ttbdo.Text = "TTBDO";
+            ttbdo.UseVisualStyleBackColor = true;
+            ttbdo.Click += button1_Click;
+            ttbdo.Leave += ttbdo_Leave;
+            // 
+            // ctrlpnlFormLoader
+            // 
+            ctrlpnlFormLoader.Dock = DockStyle.Top;
+            ctrlpnlFormLoader.Location = new Point(181, 0);
+            ctrlpnlFormLoader.Name = "ctrlpnlFormLoader";
+            ctrlpnlFormLoader.Size = new Size(1284, 835);
+            ctrlpnlFormLoader.TabIndex = 1;
             // 
             // frmControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 73);
-            ClientSize = new Size(1184, 550);
-            Controls.Add(bldglayoutFormLoader);
+            ClientSize = new Size(1465, 838);
+            Controls.Add(ctrlpnlFormLoader);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmControl";
             Text = "frmControl";
             panel1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
+
         private Panel panel1;
-        private Button ttbdo;
-        private Label label2;
         private Panel panel2;
-        private Panel bldglayoutFormLoader;
-        private Button button2;
+        private Button ttbdo;
+        private Label label1;
+        private Button add;
+        private Panel ctrlpnlFormLoader;
+        private Panel panel3;
+        private Button bldgA;
     }
 }

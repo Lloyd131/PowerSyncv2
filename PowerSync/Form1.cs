@@ -47,9 +47,9 @@ namespace PowerSync
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            btnDashboard.BackColor = Color.FromArgb(46, 51, 73); 
+            btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
 
-            Title.Text = "Dashboard";
+            Title.Text = "DASHBOARD";
             this.PnlFormLoader.Controls.Clear();
             frmDashboard FrmDashboard_Vrb = new frmDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -61,7 +61,7 @@ namespace PowerSync
         {
             btnControl.BackColor = Color.FromArgb(46, 51, 73);
 
-            Title.Text = "Power Control";
+            Title.Text = "CONTROL";
             this.PnlFormLoader.Controls.Clear();
             frmControl FrmControl_Vrb = new frmControl() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmControl_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -73,7 +73,7 @@ namespace PowerSync
         {
             btnStats.BackColor = Color.FromArgb(46, 51, 73);
 
-            Title.Text = "Statistics";
+            Title.Text = "STATISTICS";
             this.PnlFormLoader.Controls.Clear();
             frmStat FrmStat_Vrb = new frmStat() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmStat_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -99,6 +99,21 @@ namespace PowerSync
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PnlFormLoader_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
