@@ -539,6 +539,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "BldgLayout";
             Text = "BldgLayout";
+            Leave += BldgLayout_Leave;
             buildingpnl.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();

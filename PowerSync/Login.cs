@@ -16,6 +16,36 @@ namespace PowerSync
         public Login()
         {
             InitializeComponent();
+
+            // Set KeyPreview to true to handle form-level key events
+            this.KeyPreview = true;
+
+            // Configure controls to handle enter key
+            username.KeyDown += TextBox_KeyDown;
+            password.KeyDown += TextBox_KeyDown;
+
+            // Set the accept button of the form
+            this.AcceptButton = button1;
+        }
+
+        private void TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+
+                // If username field is active and not empty, move to password
+                if (sender == username && !string.IsNullOrWhiteSpace(username.Text))
+                {
+                    password.Focus();
+                }
+                // If password field is active, trigger login
+                else if (sender == password)
+                {
+                    button1_Click(sender, e);
+                }
+            }
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -36,12 +66,14 @@ namespace PowerSync
                 MessageBox.Show("Username/Password incorrect");
                 username.Clear();
                 password.Clear();
+                username.Focus(); // Return focus to username field after failed login
             }
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            // Set initial focus to username textbox
+            username.Focus();
         }
     }
 }

@@ -63,7 +63,7 @@ namespace PowerSync
 
             Title.Text = "CONTROL";
             this.PnlFormLoader.Controls.Clear();
-            frmControl FrmControl_Vrb = new frmControl() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmControlv2 FrmControl_Vrb = new frmControlv2() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmControl_Vrb.FormBorderStyle = FormBorderStyle.None;
             this.PnlFormLoader.Controls.Add(FrmControl_Vrb);
             FrmControl_Vrb.Show();
