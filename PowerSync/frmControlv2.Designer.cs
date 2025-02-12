@@ -33,10 +33,6 @@
             bldgC = new Button();
             bldgB = new Button();
             bldgA = new Button();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
             ttbdo = new Button();
             panel3 = new Panel();
             label1 = new Label();
@@ -62,118 +58,74 @@
             panel2.Controls.Add(bldgC);
             panel2.Controls.Add(bldgB);
             panel2.Controls.Add(bldgA);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label2);
             panel2.Controls.Add(ttbdo);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 143);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 76);
             panel2.Name = "panel2";
-            panel2.Size = new Size(181, 695);
+            panel2.Size = new Size(181, 756);
             panel2.TabIndex = 3;
             // 
             // bldgC
             // 
-            bldgC.FlatAppearance.BorderSize = 0;
+            bldgC.BackColor = Color.FromArgb(46, 51, 73);
+            bldgC.FlatAppearance.BorderColor = Color.White;
             bldgC.FlatStyle = FlatStyle.Flat;
             bldgC.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bldgC.ForeColor = Color.White;
-            bldgC.Location = new Point(5, 501);
+            bldgC.Location = new Point(5, 339);
             bldgC.Name = "bldgC";
             bldgC.Size = new Size(166, 60);
             bldgC.TabIndex = 6;
-            bldgC.Text = "View Bldg";
-            bldgC.UseVisualStyleBackColor = true;
+            bldgC.Text = "Bldg C";
+            bldgC.UseVisualStyleBackColor = false;
             bldgC.Click += bldgC_Click;
             bldgC.Leave += bldgC_Leave;
             // 
             // bldgB
             // 
-            bldgB.FlatAppearance.BorderSize = 0;
+            bldgB.BackColor = Color.FromArgb(46, 51, 73);
+            bldgB.FlatAppearance.BorderColor = Color.White;
             bldgB.FlatStyle = FlatStyle.Flat;
             bldgB.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bldgB.ForeColor = Color.White;
-            bldgB.Location = new Point(5, 335);
+            bldgB.Location = new Point(5, 227);
             bldgB.Name = "bldgB";
             bldgB.Size = new Size(166, 60);
             bldgB.TabIndex = 5;
-            bldgB.Text = "View Bldg";
-            bldgB.UseVisualStyleBackColor = true;
+            bldgB.Text = "Bldg B";
+            bldgB.UseVisualStyleBackColor = false;
             bldgB.Click += bldgB_Click;
             bldgB.Leave += bldgB_Leave;
             // 
             // bldgA
             // 
-            bldgA.FlatAppearance.BorderSize = 0;
+            bldgA.BackColor = Color.FromArgb(46, 51, 73);
+            bldgA.FlatAppearance.BorderColor = Color.White;
             bldgA.FlatStyle = FlatStyle.Flat;
             bldgA.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bldgA.ForeColor = Color.White;
-            bldgA.Location = new Point(3, 192);
+            bldgA.Location = new Point(9, 119);
             bldgA.Name = "bldgA";
             bldgA.Size = new Size(166, 60);
             bldgA.TabIndex = 4;
-            bldgA.Text = "View Bldg";
-            bldgA.UseVisualStyleBackColor = true;
+            bldgA.Text = "Bldg A";
+            bldgA.UseVisualStyleBackColor = false;
             bldgA.Click += bldgA_Click;
             bldgA.Leave += bldgA_Leave;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(40, 467);
-            label5.Name = "label5";
-            label5.Size = new Size(84, 31);
-            label5.TabIndex = 3;
-            label5.Text = "Bldg C";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(40, 301);
-            label4.Name = "label4";
-            label4.Size = new Size(85, 31);
-            label4.TabIndex = 3;
-            label4.Text = "Bldg B";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(40, 158);
-            label3.Name = "label3";
-            label3.Size = new Size(86, 31);
-            label3.TabIndex = 3;
-            label3.Text = "Bldg A";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(40, 21);
-            label2.Name = "label2";
-            label2.Size = new Size(89, 31);
-            label2.TabIndex = 2;
-            label2.Text = "TTBDO";
-            // 
             // ttbdo
             // 
-            ttbdo.FlatAppearance.BorderSize = 0;
+            ttbdo.BackColor = Color.FromArgb(46, 51, 73);
+            ttbdo.FlatAppearance.BorderColor = Color.White;
             ttbdo.FlatStyle = FlatStyle.Flat;
             ttbdo.Font = new Font("Nirmala UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ttbdo.ForeColor = Color.White;
-            ttbdo.Location = new Point(3, 55);
+            ttbdo.Location = new Point(9, 13);
             ttbdo.Name = "ttbdo";
             ttbdo.Size = new Size(166, 60);
             ttbdo.TabIndex = 1;
-            ttbdo.Text = "View Bldg";
-            ttbdo.UseVisualStyleBackColor = true;
+            ttbdo.Text = "TTBDO";
+            ttbdo.UseVisualStyleBackColor = false;
             ttbdo.Click += ttbdo_Click;
             ttbdo.Leave += ttbdo_Leave;
             // 
@@ -200,6 +152,7 @@
             // ctrlpnlFormLoaderv2
             // 
             ctrlpnlFormLoaderv2.BackColor = Color.FromArgb(46, 51, 73);
+            ctrlpnlFormLoaderv2.Dock = DockStyle.Left;
             ctrlpnlFormLoaderv2.Location = new Point(181, 0);
             ctrlpnlFormLoaderv2.Name = "ctrlpnlFormLoaderv2";
             ctrlpnlFormLoaderv2.Size = new Size(1284, 838);
@@ -217,7 +170,6 @@
             Text = "frmControlv2";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ResumeLayout(false);
@@ -229,14 +181,10 @@
         private Panel panel3;
         private Label label1;
         private Panel panel2;
-        private Label label2;
         private Button ttbdo;
         private Panel ctrlpnlFormLoaderv2;
         private Button bldgA;
-        private Label label3;
         private Button bldgC;
         private Button bldgB;
-        private Label label5;
-        private Label label4;
     }
 }

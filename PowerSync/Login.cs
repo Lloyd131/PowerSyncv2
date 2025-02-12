@@ -16,7 +16,6 @@ namespace PowerSync
         public Login()
         {
             InitializeComponent();
-
             // Set KeyPreview to true to handle form-level key events
             this.KeyPreview = true;
 
@@ -26,6 +25,13 @@ namespace PowerSync
 
             // Set the accept button of the form
             this.AcceptButton = button1;
+
+            // Set password masking character
+            password.PasswordChar = '*';
+
+            // Optional: Set maximum length for username and password
+            username.MaxLength = 50;
+            password.MaxLength = 50;
         }
 
         private void TextBox_KeyDown(object sender, KeyEventArgs e)
@@ -35,9 +41,10 @@ namespace PowerSync
                 e.Handled = true;
                 e.SuppressKeyPress = true;
 
-                // If username field is active and not empty, move to password
-                if (sender == username && !string.IsNullOrWhiteSpace(username.Text))
+                // If username field is active
+                if (sender == username)
                 {
+                    // Move to password field regardless of whether username is empty
                     password.Focus();
                 }
                 // If password field is active, trigger login

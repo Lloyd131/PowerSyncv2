@@ -101,7 +101,7 @@
             panel5.Controls.Add(fan5);
             panel5.Controls.Add(led5);
             panel5.Controls.Add(label6);
-            panel5.Location = new Point(832, 24);
+            panel5.Location = new Point(830, 24);
             panel5.Name = "panel5";
             panel5.Size = new Size(429, 375);
             panel5.TabIndex = 2;
@@ -205,7 +205,7 @@
             panel4.Controls.Add(fan3);
             panel4.Controls.Add(led3);
             panel4.Controls.Add(label5);
-            panel4.Location = new Point(372, 24);
+            panel4.Location = new Point(366, 24);
             panel4.Name = "panel4";
             panel4.Size = new Size(429, 375);
             panel4.TabIndex = 1;
@@ -306,7 +306,7 @@
             panel3.Controls.Add(fan2);
             panel3.Controls.Add(led2);
             panel3.Controls.Add(label4);
-            panel3.Location = new Point(47, 226);
+            panel3.Location = new Point(41, 226);
             panel3.Name = "panel3";
             panel3.Size = new Size(282, 173);
             panel3.TabIndex = 1;
@@ -368,7 +368,7 @@
             panel2.Controls.Add(fan1);
             panel2.Controls.Add(led1);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(50, 24);
+            panel2.Location = new Point(41, 24);
             panel2.Name = "panel2";
             panel2.Size = new Size(282, 173);
             panel2.TabIndex = 0;
@@ -424,6 +424,7 @@
             // 
             // brkrpnl
             // 
+            brkrpnl.BackColor = Color.FromArgb(23, 30, 54);
             brkrpnl.Controls.Add(floor1);
             brkrpnl.Controls.Add(BrkrStat);
             brkrpnl.Controls.Add(OFF);
@@ -431,7 +432,7 @@
             brkrpnl.Controls.Add(Status);
             brkrpnl.Controls.Add(indicator);
             brkrpnl.Controls.Add(Brkr1);
-            brkrpnl.Location = new Point(495, 560);
+            brkrpnl.Location = new Point(41, 563);
             brkrpnl.Name = "brkrpnl";
             brkrpnl.Size = new Size(288, 244);
             brkrpnl.TabIndex = 0;
@@ -439,7 +440,8 @@
             // 
             // floor1
             // 
-            floor1.FlatAppearance.BorderSize = 0;
+            floor1.BackColor = Color.FromArgb(46, 51, 73);
+            floor1.FlatAppearance.BorderColor = Color.White;
             floor1.FlatStyle = FlatStyle.Flat;
             floor1.Font = new Font("SansSerif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 2);
             floor1.ForeColor = Color.White;
@@ -448,7 +450,7 @@
             floor1.Size = new Size(143, 39);
             floor1.TabIndex = 6;
             floor1.Text = "Floor 1";
-            floor1.UseVisualStyleBackColor = true;
+            floor1.UseVisualStyleBackColor = false;
             floor1.Click += floor1_Click;
             // 
             // BrkrStat
@@ -466,7 +468,7 @@
             // OFF
             // 
             OFF.BackColor = Color.DarkGray;
-            OFF.FlatAppearance.BorderSize = 0;
+            OFF.FlatAppearance.BorderColor = Color.White;
             OFF.FlatStyle = FlatStyle.Flat;
             OFF.Font = new Font("SansSerif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 2);
             OFF.ForeColor = Color.White;
@@ -482,7 +484,7 @@
             // ON
             // 
             ON.BackColor = Color.DarkGray;
-            ON.FlatAppearance.BorderSize = 0;
+            ON.FlatAppearance.BorderColor = Color.White;
             ON.FlatStyle = FlatStyle.Flat;
             ON.Font = new Font("SansSerif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 2);
             ON.ForeColor = Color.White;

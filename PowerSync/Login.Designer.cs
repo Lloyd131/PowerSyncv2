@@ -81,22 +81,23 @@
             // 
             password.BorderStyle = BorderStyle.None;
             password.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            password.Location = new Point(172, 257);
+            password.Location = new Point(175, 257);
             password.Name = "password";
             password.Size = new Size(261, 27);
             password.TabIndex = 3;
             // 
             // button1
             // 
-            button1.FlatAppearance.BorderSize = 0;
+            button1.BackColor = Color.FromArgb(37, 42, 64);
+            button1.FlatAppearance.BorderColor = Color.White;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("SansSerif", 12F, FontStyle.Bold, GraphicsUnit.Point, 2);
-            button1.Location = new Point(172, 321);
+            button1.Location = new Point(172, 334);
             button1.Name = "button1";
             button1.Size = new Size(128, 38);
             button1.TabIndex = 4;
             button1.Text = "LOG IN";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // close

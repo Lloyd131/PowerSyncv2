@@ -27,7 +27,7 @@ namespace PowerSync
             InitializeComponent();
             btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
 
-            Title.Text = "Dashboard";
+            
             this.PnlFormLoader.Controls.Clear();
             frmDashboard FrmDashboard_Vrb = new frmDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -49,7 +49,7 @@ namespace PowerSync
         {
             btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
 
-            Title.Text = "DASHBOARD";
+            
             this.PnlFormLoader.Controls.Clear();
             frmDashboard FrmDashboard_Vrb = new frmDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -61,7 +61,7 @@ namespace PowerSync
         {
             btnControl.BackColor = Color.FromArgb(46, 51, 73);
 
-            Title.Text = "CONTROL";
+            
             this.PnlFormLoader.Controls.Clear();
             frmControlv2 FrmControl_Vrb = new frmControlv2() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmControl_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -73,7 +73,7 @@ namespace PowerSync
         {
             btnStats.BackColor = Color.FromArgb(46, 51, 73);
 
-            Title.Text = "STATISTICS";
+            
             this.PnlFormLoader.Controls.Clear();
             frmStat FrmStat_Vrb = new frmStat() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmStat_Vrb.FormBorderStyle = FormBorderStyle.None;

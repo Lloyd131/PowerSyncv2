@@ -41,7 +41,6 @@
             btnControl = new Button();
             btnDashboard = new Button();
             panel3 = new Panel();
-            Title = new Label();
             PnlFormLoader = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -146,13 +145,13 @@
             // 
             // btnStats
             // 
-            btnStats.FlatAppearance.BorderSize = 0;
+            btnStats.FlatAppearance.BorderColor = Color.White;
             btnStats.FlatStyle = FlatStyle.Flat;
             btnStats.Font = new Font("SansSerif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 2);
             btnStats.ForeColor = Color.White;
-            btnStats.Location = new Point(9, 181);
+            btnStats.Location = new Point(3, 181);
             btnStats.Name = "btnStats";
-            btnStats.Size = new Size(164, 45);
+            btnStats.Size = new Size(176, 45);
             btnStats.TabIndex = 0;
             btnStats.Text = "STATISTICS";
             btnStats.UseVisualStyleBackColor = true;
@@ -161,13 +160,13 @@
             // 
             // btnControl
             // 
-            btnControl.FlatAppearance.BorderSize = 0;
+            btnControl.FlatAppearance.BorderColor = Color.White;
             btnControl.FlatStyle = FlatStyle.Flat;
             btnControl.Font = new Font("SansSerif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 2);
             btnControl.ForeColor = Color.White;
-            btnControl.Location = new Point(12, 105);
+            btnControl.Location = new Point(3, 105);
             btnControl.Name = "btnControl";
-            btnControl.Size = new Size(161, 45);
+            btnControl.Size = new Size(176, 45);
             btnControl.TabIndex = 0;
             btnControl.Text = "CONTROL";
             btnControl.UseVisualStyleBackColor = true;
@@ -176,7 +175,7 @@
             // 
             // btnDashboard
             // 
-            btnDashboard.FlatAppearance.BorderSize = 0;
+            btnDashboard.FlatAppearance.BorderColor = Color.White;
             btnDashboard.FlatStyle = FlatStyle.Flat;
             btnDashboard.Font = new Font("SansSerif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 2);
             btnDashboard.ForeColor = Color.White;
@@ -198,23 +197,12 @@
             panel3.Size = new Size(185, 94);
             panel3.TabIndex = 0;
             // 
-            // Title
-            // 
-            Title.AutoSize = true;
-            Title.Font = new Font("Nirmala UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Title.ForeColor = Color.White;
-            Title.Location = new Point(202, 95);
-            Title.Name = "Title";
-            Title.Size = new Size(232, 46);
-            Title.TabIndex = 2;
-            Title.Text = "DASHBOARD";
-            // 
             // PnlFormLoader
             // 
-            PnlFormLoader.Dock = DockStyle.Bottom;
-            PnlFormLoader.Location = new Point(185, 164);
+            PnlFormLoader.Dock = DockStyle.Top;
+            PnlFormLoader.Location = new Point(185, 70);
             PnlFormLoader.Name = "PnlFormLoader";
-            PnlFormLoader.Size = new Size(1465, 838);
+            PnlFormLoader.Size = new Size(1465, 929);
             PnlFormLoader.TabIndex = 3;
             PnlFormLoader.Paint += PnlFormLoader_Paint;
             // 
@@ -225,7 +213,6 @@
             BackColor = Color.FromArgb(46, 51, 73);
             ClientSize = new Size(1650, 1002);
             Controls.Add(PnlFormLoader);
-            Controls.Add(Title);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -239,7 +226,6 @@
             panel2.ResumeLayout(false);
             panel4.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -254,7 +240,6 @@
         private Button btnControl;
         private Panel panel4;
         private Panel panel3;
-        private Label Title;
         private Panel PnlFormLoader;
         private Button button1;
         private Label label2;

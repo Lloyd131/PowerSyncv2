@@ -46,9 +46,9 @@
             // 
             panel7.BackColor = Color.FromArgb(37, 42, 64);
             panel7.Controls.Add(label8);
-            panel7.Location = new Point(27, 285);
+            panel7.Location = new Point(30, 394);
             panel7.Name = "panel7";
-            panel7.Size = new Size(1412, 436);
+            panel7.Size = new Size(1412, 484);
             panel7.TabIndex = 7;
             panel7.Paint += panel7_Paint;
             // 
@@ -57,7 +57,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("SansSerif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 2);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(611, 180);
+            label8.Location = new Point(611, 202);
             label8.Name = "label8";
             label8.Size = new Size(195, 27);
             label8.TabIndex = 0;
@@ -69,7 +69,7 @@
             panel6.BackColor = Color.FromArgb(37, 42, 64);
             panel6.Controls.Add(label9);
             panel6.Controls.Add(label10);
-            panel6.Location = new Point(799, 24);
+            panel6.Location = new Point(805, 61);
             panel6.Name = "panel6";
             panel6.Size = new Size(637, 224);
             panel6.TabIndex = 6;
@@ -103,7 +103,7 @@
             panel5.Controls.Add(label7);
             panel5.Controls.Add(label6);
             panel5.Controls.Add(label5);
-            panel5.Location = new Point(27, 24);
+            panel5.Location = new Point(30, 61);
             panel5.Name = "panel5";
             panel5.Size = new Size(637, 224);
             panel5.TabIndex = 5;
@@ -146,7 +146,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(46, 51, 73);
-            ClientSize = new Size(1465, 838);
+            ClientSize = new Size(1465, 929);
             Controls.Add(panel7);
             Controls.Add(panel6);
             Controls.Add(panel5);
